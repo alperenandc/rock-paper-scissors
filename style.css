@@ -1,0 +1,81 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f7fb;
+}
+::selection {
+  color: #fff;
+  background-color: #7d2ae8;
+}
+.container{
+    padding: 20px 70px;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.result_images{
+    display: flex;
+    column-gap: 7rem;
+   
+}
+.result_images img {
+    width: 100px;
+}
+.user_result img{
+    transform: rotate(90deg);
+}
+.cpu_result img{
+    transform: rotate(-90deg) rotateY(180deg);;
+    
+}
+.result{
+    text-align: center;
+    font-size: 2rem;
+    color: #7d2ae8;
+    margin-top: 1.5rem;
+}
+.option_images img{
+    width: 50px;
+}
+.option_images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    
+}
+.option_image:hover{
+    opacity: 1;
+}
+.option_image.active{
+    opacity: 1;
+}
+.option_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.option_image img{
+    pointer-events: none;
+}
+.option_image p{
+    color: #7d2ae8;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    pointer-events: none;
+
+}
